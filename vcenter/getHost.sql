@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION vdi.getHost (vmname text)
+CREATE OR REPLACE FUNCTION getHost (vmname text)
 RETURNS text
 AS $$
 import pyvim.connect
