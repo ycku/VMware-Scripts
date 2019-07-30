@@ -26,3 +26,8 @@ INSERT INTO config (key, value) VALUES ('vcenter', '{''host'': ''theip'', ''user
 ```
 REVOKE ALL ON TABLE config FROM public, xxxuser;
 ```
+
+## VM_Resource_Limit.ps1
+通常虛擬機都會 overcommit, 為了有效運用資源, 預設規格開高, 離峰時間不限制使用, 尖峰時間動態限制
+
+可以設到排程, 定時檢視自動調控
